@@ -142,3 +142,8 @@ td {
 .row ul {
   margin-left: 20px;
 }
+
+#Introduce #sec2 ul {
+  list-style: disc;
+  list-style-position: inside;
+}
