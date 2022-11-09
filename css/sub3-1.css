@@ -19,6 +19,7 @@
 
 .col {
   display: flex;
+  justify-content: space-between;
   gap: 30px;
   padding: 50px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -32,6 +33,7 @@
   width: 50%;
   display: flex;
 }
+
 .row ul {
   margin-left: 20px;
 }
@@ -67,4 +69,25 @@
   color: #fff;
   cursor: pointer;
   border: none;
+}
+
+@media (max-width: 1080px) {
+  .row,
+  .col {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sec1 .container h1 {
+    text-align: center;
+  }
+  #sec2 .container h2 {
+    text-align: center;
+  }
+  .row h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .row ul {
+    margin-left: 0;
+  }
 }

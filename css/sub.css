@@ -111,3 +111,9 @@ td {
   /* display: flex; */
   font-size: 20px;
 }
+
+@media (max-width: 1080px) {
+  #section2 .container .item img {
+    height: 150px;
+  }
+}
