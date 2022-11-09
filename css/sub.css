@@ -1,5 +1,5 @@
 /* sub page용 타이틀(서브 공통) */
-#about #sub-title h1 {
+#sub-title h1 {
   font-size: 40px;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -10,7 +10,7 @@
 
 #sub-title {
   height: 300px;
-  background: #000;
+  /* background: #000; */
   color: #fff;
   display: flex;
   align-items: center;
@@ -67,4 +67,45 @@
 #section2 .container .item h2 {
   text-align: center;
   margin: 20px 0 10px 0;
+}
+
+/* location */
+#location #sub-title {
+  background-image: url("../images/location-img.jpg");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#location #map .container {
+  padding: 70px 0 50px;
+}
+
+#location .location-info .container {
+  outline: 1px solid #000;
+  display: flex;
+}
+
+#location .location-info .container img {
+  width: 50%;
+}
+
+#location .location-info .container .address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+#location th,
+td {
+  padding: 5px;
+  padding-left: 1em;
+}
+
+#location th {
+  text-align: left;
+  vertical-align: top;
+  /* display: flex; */
+  font-size: 20px;
 }
