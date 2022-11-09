@@ -18,10 +18,23 @@ $(function () {
       bg_img_num = 0;
     }
     console.log(bg_img_num);
-
     // 배경이미지 변경
     $("#main-banner .container").css({
       "background-image": `url(${bgArr[bg_img_num]})`,
     });
   }, 5000);
+});
+
+// 메인 이미지 슬라이더
+$(function () {});
+
+// 사이트맵 버튼
+$(function () {
+  $("#btn-toggle").on("click", function () {
+    $("#site-map-menu").toggleClass("show");
+  });
+
+  $("#site-menu-close").on("click", function () {
+    $("#site-map-menu").removeClass("show");
+  });
 });
