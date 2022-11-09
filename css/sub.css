@@ -109,3 +109,36 @@ td {
   /* display: flex; */
   font-size: 20px;
 }
+
+/* Introduce */
+#Introduce #sub-title {
+  background-image: url("../images/Introduce2.jpg");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#sec1 .container {
+  padding: 50px 20px;
+}
+
+#sec2 .container {
+  padding: 50px 20px;
+}
+
+.container h2 {
+  margin-bottom: 50px;
+}
+
+.col {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.row {
+  width: 50%;
+  display: flex;
+}
+.row ul {
+  margin-left: 20px;
+}
