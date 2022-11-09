@@ -1,4 +1,6 @@
 /* sub page용 타이틀(서브 공통) */
+@import "./sub3-1.css";
+
 #sub-title h1 {
   font-size: 40px;
   font-family: "Noto Sans KR", sans-serif;
@@ -108,48 +110,4 @@ td {
   vertical-align: top;
   /* display: flex; */
   font-size: 20px;
-}
-
-/* Introduce */
-#Introduce #sub-title {
-  background-image: url("../images/Introduce2.jpg");
-  /* background-size: cover; */
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-#sec1 .container {
-  padding: 50px 20px;
-}
-
-#sec2 .container {
-  padding: 50px 20px;
-}
-
-/* .container h2 {
-  margin-bottom: 50px;
-} */
-
-.col {
-  display: flex;
-  gap: 30px;
-  padding: 50px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.col:last-child {
-  border: none;
-}
-
-.row {
-  width: 50%;
-  display: flex;
-}
-.row ul {
-  margin-left: 20px;
-}
-
-#Introduce #sec2 ul {
-  list-style: disc;
-  list-style-position: inside;
 }

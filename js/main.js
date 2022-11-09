@@ -38,3 +38,51 @@ $(function () {
     $("#site-map-menu").removeClass("show");
   });
 });
+
+$(function () {
+  // 배너 이미지 배열
+  let bgArr1 = [
+    "../images/Introduce2.jpg",
+    "../images/Introduce1.jpg",
+    "../images/Introduce3.jpg",
+  ];
+
+  let bg_img_num1 = 0; // 이미지 번호
+
+  // 이미지 버튼 오른쪽 클릭
+  $(".right").click(function () {
+    bg_img_num1++;
+    if (bg_img_num1 == 3) {
+      bg_img_num1 = 0;
+    }
+    $("#Introduce #sub-title").css(
+      "background-image",
+      `url(${bgArr1[bg_img_num1]})`
+    );
+  });
+
+  // 이미지 버튼 왼쪽 클릭
+  $(".left").click(function () {
+    bg_img_num1--;
+    if (bg_img_num1 == -1) {
+      bg_img_num1 = 2;
+    }
+    $("#Introduce #sub-title").css(
+      "background-image",
+      `url(${bgArr1[bg_img_num1]})`
+    );
+  });
+
+  // 배경 재생
+  setInterval(function () {
+    bg_img_num1++; // 이미지 번호 증가
+    if (bg_img_num1 >= bgArr1.length) {
+      bg_img_num1 = 0;
+    }
+    console.log(bg_img_num1);
+    // 배경이미지 변경
+    $("#Introduce #sub-title").css({
+      "background-image": `url(${bgArr1[bg_img_num1]})`,
+    });
+  }, 5000);
+});
