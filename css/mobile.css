@@ -44,7 +44,6 @@ a {
 
 p {
   line-height: 26px;
-  text-align: center;
 }
 
 table {
@@ -66,6 +65,13 @@ header {
   z-index: 654654;
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#sub-title .container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+  top: 150px;
 }
 
 .container {
@@ -170,7 +176,7 @@ header {
   height: 100%;
   background-image: url("../images/main-banner-e1.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,4 +240,115 @@ header {
 #site-map-menu .depth1 > li > a {
   display: flex;
   justify-content: space-between;
+}
+
+/* intro */
+#intro .container h1 {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+#intro .container h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#intro .container p {
+  margin-bottom: 50px;
+}
+
+#intro .container img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* notice */
+#notice {
+  margin: 20px;
+}
+
+#notice .container .icons-list {
+  text-align: center;
+}
+
+.intro-list p {
+  text-align: center;
+}
+
+#notice .container img {
+  display: block;
+  margin: 0 auto;
+}
+
+#notice .icon-group {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 30px;
+}
+
+#notice li:last-child .icon-group {
+  border-bottom: none;
+}
+
+#notice .icon-group h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+/* sns-banner */
+
+#sns-banner .container {
+  background-image: url(../images/sns-banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 140px;
+}
+
+#sns-banner .banner-title h1 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 20px;
+}
+
+#sns-banner .banner-title p {
+  font-size: 15px;
+}
+#sns-banner .sns-icon-group a {
+  margin-left: 25px;
+}
+
+/* main-footer */
+#main-footer .container {
+  padding: 50px;
+}
+#main-footer {
+  margin-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#main-footer .footer-menu {
+  margin-bottom: 15px;
+}
+
+#main-footer .footer-menu a {
+  font-size: 14px;
+  color: #444;
+}
+
+#main-footer address,
+#main-footer .copy {
+  font-size: 12px;
+  font-style: normal;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.asdf {
+  position: absolute;
+  top: 155px;
+  z-index: 999;
 }

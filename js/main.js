@@ -1,6 +1,7 @@
 // main.js
 console.log("main.js");
 
+// pc 사이트맵(모바일 GNB)버튼
 $(function () {
   // 배너 이미지 배열
   let bgArr = [
@@ -85,4 +86,17 @@ $(function () {
       "background-image": `url(${bgArr1[bg_img_num1]})`,
     });
   }, 5000);
+});
+
+$(function () {
+  // GNB 1단계 a 기본 이벤트 제거
+  $("#site-map-menu .site-menu .depth1 > li > a").on("click", function (event) {
+    // 여기다 toggle 기능 추가 : 클릭한 버튼의 다음형제(depth2)
+    $(this).next().toggleClass("show");
+    $("#site-map-menu .site-menu .depth1 > li > a")
+      .not($(this))
+      .next()
+      .removeClass("show");
+    event.preventDefault();
+  });
 });
