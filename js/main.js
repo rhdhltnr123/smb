@@ -17,7 +17,7 @@ $(function () {
     if (bg_img_num >= bgArr.length) {
       bg_img_num = 0;
     }
-    console.log(bg_img_num);
+    /* console.log(bg_img_num); */
     // 배경이미지 변경
     $("#main-banner .container").css({
       "background-image": `url(${bgArr[bg_img_num]})`,
@@ -79,7 +79,7 @@ $(function () {
     if (bg_img_num1 >= bgArr1.length) {
       bg_img_num1 = 0;
     }
-    console.log(bg_img_num1);
+    /* console.log(bg_img_num1); */
     // 배경이미지 변경
     $("#Introduce #sub-title").css({
       "background-image": `url(${bgArr1[bg_img_num1]})`,

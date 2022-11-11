@@ -387,7 +387,12 @@ td {
   z-index: 9999;
 }
 
-@media (max-width: 1080px) {
+/* 1단계 메뉴 버튼(pc 화살표 안보임) */
+#site-map-menu .depth1 > li > a > span {
+  display: none;
+}
+
+/* @media (max-width: 1080px) {
   #gnb {
     display: none;
   }
@@ -395,4 +400,4 @@ td {
     display: flex;
     flex-direction: column;
   }
-}
+} */
