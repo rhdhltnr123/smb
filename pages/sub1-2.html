@@ -18,25 +18,39 @@
       content="수원여자대학교 실용음악과 홈페이지입니다."
     />
     <link rel="icon" href="../images/favicon/Favicon.png" />
-    <title>APOA _STUDIO_수원여자대학교 실용음악과</title>
+    <title>학과소식_수원여자대학교 실용음악과</title>
     <!-- 제이쿼리 -->
     <script
       src="https://code.jquery.com/jquery-3.6.1.js"
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
       crossorigin="anonymous"
     ></script>
-    <!-- 슬릭 -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
     <!-- reset css -->
     <link rel="stylesheet" href="../css/reset.css" />
-    <!-- sub.css -->
-    <link rel="stylesheet" href="../css/sub3-1.css" />
+    <!-- 메인css -->
+    <link rel="stylesheet" href="../css/headfoot.css" />
+    <!-- 서브 1-2 css pc-->
+    <link
+      rel="stylesheet"
+      href="../css/sub1-2.css"
+      media="screen and (min-width:768px)"
+    />
+    <!-- 서브 1-2 css mobile-->
+    <link
+      rel="stylesheet"
+      href="../css/sub1-2mobile.css"
+      media="screen and (max-width: 767px)"
+    />
   </head>
-  <body>
+
+  <body class="sub1-2">
     <div class="wrap">
       <!-- header -->
       <header>
@@ -298,116 +312,168 @@
         </div>
       </div>
 
-      <!-- 메인배너 -->
-      <section class="main-banner">
+      <!-- subtitle -->
+      <section id="sub-title">
         <div class="container">
-          <h1>APOA STUDIO since 2018</h1>
+          <h1>학과소식</h1>
         </div>
+        <!-- container -->
       </section>
 
       <!-- LNB -->
       <div class="lnb">
         <div class="lnb-title">
-          <span>APOA STUDIO</span>
+          <span>학과소개</span>
         </div>
         <div class="lnb-list">
           <ul>
             <li>
-              <a href="./sub3-1.html" class="lnb-list-bold"
-                >음반제작 및 유통업무</a
-              >
+              <a href="./sub1-1.html">학과소개</a>
             </li>
+            <li class="lnb-list-bold"><a href="./sub1-2.html">학과소식</a></li>
+            <li><a href="#">교육시설 및 장비</a></li>
+            <li><a href="./sub1-4.html">오시는 길</a></li>
           </ul>
         </div>
       </div>
 
-      <!-- section -->
-      <section class="section-sns-banner">
-        <div class="slider">
-          <div class="item">
-            <img src="../images/apoastudio/01.png" alt="박소미" />
-            <a href="https://youtu.be/aeYNgs7o2fo" class="sns-youtube"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
+      <!-- sec -->
+      <div class="container">
+        <section id="slide1">
+          <h1>학과소식</h1>
+          <div id="slideShow">
+            <ul class="slides">
+              <li></li>
+              <li>
+                <img src="../images/sub1-2/masterclass.jpg" alt="학과소식" />
+              </li>
+              <li><img src="../images/sub1-2/mento.jpg" alt="학과소식" /></li>
+              <li><img src="../images/sub1-2/lesson1.jpg" alt="학과소식" /></li>
+              <li><img src="../images/sub1-2/ot.jpg" alt="학과소식" /></li>
+            </ul>
           </div>
-          <div class="item">
-            <img src="../images/apoastudio/02.png" alt="보명" />
-            <a
-              href="https://www.genie.co.kr/detail/artistSong?xxnm=80630122"
-              class="sns-youtube"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-          </div>
-          <div class="item">
-            <img src="../images/apoastudio/03.png" alt="지단비" />
-            <a href="https://youtu.be/EzMsrDBgOKU" class="sns-youtube"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-          </div>
-          <div class="item">
-            <img src="../images/apoastudio/04.png" alt="정은정" />
-            <a href="https://youtu.be/vLCJ6-j5uo0" class="sns-youtube"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-          </div>
-          <div class="item">
-            <img src="../images/apoastudio/05.png" alt="지단비" />
-            <a
-              href="https://www.youtube.com/channel/UC3gGNp3rUuOJEtLTxhxMZ5Q/about"
-              class="sns-youtube"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-          </div>
-          <div class="item">
-            <img src="../images/apoastudio/06.png" alt="소민" />
-            <a href="https://youtu.be/Gr_E9TO8-bM" class="sns-youtube"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-          </div>
-          <div class="item">
-            <img src="../images/apoastudio/07.png" alt="은경" />
-            <a href="https://youtu.be/Jo7bR5DSKQY" class="sns-youtube"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-          </div>
-          <div class="item">
-            <img src="../images/apoastudio/08.png" alt="박다슬" />
-            <a
-              href="https://www.genie.co.kr/detail/artistInfo?xxnm=80690522"
-              class="sns-youtube"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-          </div>
-          <div class="item">
-            <img src="../images/apoastudio/09.png" alt="한울" />
-            <a href="https://youtu.be/LpJreHIWwok" class="sns-youtube"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-          </div>
-          <div class="item">
-            <img src="../images/apoastudio/10.png" alt="반현아" />
-            <a href="https://youtu.be/SOVJoZT7Cac" class="sns-youtube"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-          </div>
-        </div>
-      </section>
-      <div class="section-sns-banner-sub">
-        <img src="../images/sub3-1/icon.png" alt="" />
-        <div class="banner-sub-text">
-          <h1>APOA STUDIO since 2018</h1>
-          <p>
-            실용음악과 졸업생으로 구성된 공연 & 음반 기획 회사로 현재
-            실용음악과의 모든 공연을 기획하고 음반 제작 및 유통 업무를 진행
-          </p>
+        </section>
+        <div class="section1-3">
+          <section id="event">
+            <h1>공연소식</h1>
+            <div id="list-content">
+              <ul class="list">
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/dodreamimg.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/dodream2img.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/eloqunceimg.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/ingermarieimg.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/outroimg.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/star.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/graduate.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/master.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/new.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/yamaha.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/small.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/session.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/capstone.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/special.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+                <li>
+                  <img
+                    class="imghover"
+                    src="../images/sub1-2/heran.jpg"
+                    alt="공연소식"
+                  />
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
       </div>
 
       <!-- footer -->
       <footer>
         <div class="footer-logo">
-          <a href="../index.html"
-            ><img src="../images/logo/logomainwhite.png" alt=""
+          <a href="./index.html"
+            ><img src="../images/logo/logomainwhite.png" alt="footerlogo"
           /></a>
         </div>
         <div class="footer-text">
@@ -447,7 +513,6 @@
           </select>
         </div>
       </footer>
-
       <!-- up btn -->
       <div class="upbtn">
         <a href="#">
@@ -463,6 +528,7 @@
     ></script>
     <!-- 자바스크립트 -->
     <script src="../js/sub.js"></script>
-    <script src="../js/sub3-1.js"></script>
+    <!-- 슬라이드자바스크립트 -->
+    <script src="../js/sub1-2.js"></script>
   </body>
 </html>
