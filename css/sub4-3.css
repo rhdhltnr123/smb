@@ -485,7 +485,7 @@ footer {
 .main-banner .container {
   height: 100%;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/sub3-1/title.png");
+    url("../images/sub4-1/maintitle.png");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -524,8 +524,6 @@ footer {
 
 .lnb .lnb-list ul {
   display: flex;
-  margin-left: -322px;
-  justify-content: center;
   align-items: center;
   height: 100%;
 }
@@ -542,126 +540,68 @@ footer {
 .lnb .lnb-list {
   flex: 3;
 }
-/* sns banner */
-.section-sns-banner {
-  margin-top: 50px;
+/* community banner */
+.section-community-banner {
   max-width: 1440px;
   width: 100%;
-  height: 500px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-.slider {
-  position: relative;
-  z-index: 200;
-  padding: 0 0px;
-  margin: 5rem auto;
-  max-width: 800px;
-  width: 100%;
-}
-
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  width: 40px;
-  height: 50px;
-  line-height: 50px;
-  margin-top: -25px;
-  border: none;
-  background: transparent;
-  color: var(--mian-color);
-  font-family: monospace;
-  font-size: 5rem;
-  z-index: 300;
-  outline: none;
-  cursor: pointer;
-}
-
-.slick-prev {
-  left: -10%;
-  text-align: left;
-}
-
-.slick-next {
-  right: -10%;
-  text-align: right;
-}
-.item.slick-slide {
-  width: 400px;
-  height: 400px !important;
-  transition: transform 0.2s;
-  position: relative;
-  border-radius: 15px;
-}
-
-.slick-slide:after {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  transition: transform 0.4s;
-}
-
-.item.slick-slide {
-  transform: scale(0.7) translate(640px);
-}
-
-.item.slick-slide.slick-center + .slick-slide {
-  transform: scale(0.8) translate(-250px);
-  z-index: 10;
-}
-
-.item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
-  transform: scale(0.7) translate(-640px);
-  z-index: 5;
-}
-
-.item.slick-slide.slick-active {
-  transform: scale(0.8) translate(250px);
-}
-
-.item.slick-slide.slick-center {
-  /* margin: 0 -10%; */
-  transform: scale(1);
-  z-index: 30;
-}
-
-.slick-center:after {
-  opacity: 0;
-}
-.sns-youtube {
-  position: absolute;
-  right: 20px;
-  bottom: 12px;
-  z-index: 9999;
-  font-size: 36px;
-  color: red;
-}
-.section-sns-banner-sub {
-  margin-top: 50px;
+  height: 850px;
   margin-bottom: 100px;
-  max-width: 1440px;
-  width: 100%;
-  height: 300px;
+}
+.community-title {
   display: flex;
+  justify-content: center;
+}
+.community-title p {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 50px 0;
+  text-align: center;
+}
+.community-menu {
+  width: 100%;
+  height: 700px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /*   background: #fff;
+ */
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
 }
-.section-sns-banner-sub img {
-  margin-left: 40px;
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
-.banner-sub-text h1 {
-  font-size: 60px;
-  font-weight: 700;
-  margin-bottom: 20px;
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
 }
-.banner-sub-text p {
-  font-size: 20px;
-  font-weight: 500;
+.swiper-pagination span {
+  background: #fff;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
 }
 @media (max-width: 1024px) {
   /* mobile-lnb */
@@ -705,33 +645,30 @@ footer {
   .main-banner .container h1 {
     text-align: center;
   }
-  .section-sns-banner {
-    margin-top: 0;
-  }
   .sns-banner-title-mobile {
     display: none;
   }
-  .sns-banner-title {
-    font-size: 30px;
+  .section-community-banner {
+    height: 400px;
   }
-  .section-sns-banner-sub {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-    margin-bottom: 80px;
-    padding: 20px;
+  .community-menu {
+    height: 400px;
   }
-  .section-sns-banner-sub {
-    margin-top: 0;
+  footer {
+    margin-top: 100px;
   }
-  .section-sns-banner-sub img {
-    margin: 0;
+}
+@media (max-width: 480px) {
+  .community-menu {
+    height: 250px;
   }
-  .slick-prev,
-  .slick-next {
-    display: none !important;
+  footer {
+    margin-top: 50px;
   }
-  .banner-sub-text p {
-    line-height: 1.5em;
-  }
+}
+.swiper-pagination-horizontal {
+  padding: 15px;
+}
+.swiper-pagination-bullet {
+  background: black !important;
 }
